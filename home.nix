@@ -9,6 +9,10 @@
   home.packages = [
     pkgs.tree
     pkgs.neovim
+    pkgs.kubectl
+    pkgs.k9s
+    pkgs.docker_27
+    pkgs.kubectx
   ];
 
   imports = [
