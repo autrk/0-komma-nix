@@ -11,9 +11,18 @@
     pkgs.neovim
     pkgs.kubectl
     pkgs.k9s
-    pkgs.docker_27
     pkgs.kubectx
   ];
+   
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
+
+  programs.git = {
+    enable = true;
+    userName = "Christian Kihm-Landau";
+    userEmail = "57010+autrk@users.noreply.github.com";
+  };
 
   imports = [
     ./features/terminal.nix
